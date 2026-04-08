@@ -1,0 +1,80 @@
+{
+  "stage": "stage_2_discover",
+  "timestamp": "2026-04-08T21:33:26.397741+00:00",
+  "duration_seconds": 0.002,
+  "input": {
+    "total_cases": 100
+  },
+  "output": {
+    "canonical_event_order": [
+      "PR_CREATED",
+      "PR_SUBMITTED",
+      "PR_APPROVED",
+      "PO_CREATED",
+      "PO_APPROVED",
+      "PO_ISSUED",
+      "GOODS_RECEIVED",
+      "INVOICE_RECEIVED",
+      "INVOICE_VALIDATED"
+    ],
+    "transitions": [
+      {
+        "step_name": "PR_CREATED",
+        "from_event": "PR_CREATED",
+        "to_event": "PR_SUBMITTED"
+      },
+      {
+        "step_name": "PR_SUBMITTED",
+        "from_event": "PR_SUBMITTED",
+        "to_event": "PR_APPROVED"
+      },
+      {
+        "step_name": "PR_APPROVED",
+        "from_event": "PR_APPROVED",
+        "to_event": "PO_CREATED"
+      },
+      {
+        "step_name": "PO_CREATED",
+        "from_event": "PO_CREATED",
+        "to_event": "PO_APPROVED"
+      },
+      {
+        "step_name": "PO_APPROVED",
+        "from_event": "PO_APPROVED",
+        "to_event": "PO_ISSUED"
+      },
+      {
+        "step_name": "PO_ISSUED",
+        "from_event": "PO_ISSUED",
+        "to_event": "GOODS_RECEIVED"
+      },
+      {
+        "step_name": "GOODS_RECEIVED",
+        "from_event": "GOODS_RECEIVED",
+        "to_event": "INVOICE_RECEIVED"
+      },
+      {
+        "step_name": "INVOICE_RECEIVED",
+        "from_event": "INVOICE_RECEIVED",
+        "to_event": "INVOICE_VALIDATED"
+      }
+    ],
+    "blocking_point_map": {
+      "PR_CREATED": "PR_CREATED",
+      "PR_SUBMITTED": "PR_SUBMITTED",
+      "PR_APPROVED": "PR_APPROVED",
+      "PO_CREATED": "PO_CREATED",
+      "PO_APPROVED": "PO_APPROVED",
+      "PO_ISSUED": "PO_ISSUED",
+      "GOODS_RECEIVED": "GOODS_RECEIVED",
+      "INVOICE_RECEIVED": "INVOICE_RECEIVED",
+      "INVOICE_VALIDATED": "INVOICE_VALIDATED"
+    },
+    "drill_fields": [
+      "company_code",
+      "material_id",
+      "plant_id",
+      "supplier_id"
+    ]
+  }
+}

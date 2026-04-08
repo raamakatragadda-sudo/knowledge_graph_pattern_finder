@@ -1,0 +1,132 @@
+{
+  "stage": "stage_5_mine",
+  "timestamp": "2026-04-08T21:33:58.341391+00:00",
+  "duration_seconds": 0.0,
+  "input": {
+    "num_sequences": 100,
+    "min_support": 5
+  },
+  "output": {
+    "num_patterns": 17,
+    "patterns": [
+      {
+        "support": 52,
+        "pattern": [
+          "STUCK:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 48,
+        "pattern": [
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 42,
+        "pattern": [
+          "SLOW:PR_SUBMITTED"
+        ]
+      },
+      {
+        "support": 39,
+        "pattern": [
+          "SLOW:PO_APPROVED"
+        ]
+      },
+      {
+        "support": 23,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 22,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 21,
+        "pattern": [
+          "SLOW:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 21,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 19,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "STUCK:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 17,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED"
+        ]
+      },
+      {
+        "support": 17,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "STUCK:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 12,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 8,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 8,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 7,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 7,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED",
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 5,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED",
+          "STUCK:PO_ISSUED"
+        ]
+      }
+    ]
+  }
+}

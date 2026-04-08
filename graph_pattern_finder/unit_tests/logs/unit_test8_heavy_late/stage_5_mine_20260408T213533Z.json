@@ -1,0 +1,227 @@
+{
+  "stage": "stage_5_mine",
+  "timestamp": "2026-04-08T21:35:33.666605+00:00",
+  "duration_seconds": 0.0,
+  "input": {
+    "num_sequences": 100,
+    "min_support": 5
+  },
+  "output": {
+    "num_patterns": 35,
+    "patterns": [
+      {
+        "support": 100,
+        "pattern": [
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 43,
+        "pattern": [
+          "SLOW:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 43,
+        "pattern": [
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 37,
+        "pattern": [
+          "SLOW:PR_SUBMITTED"
+        ]
+      },
+      {
+        "support": 37,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 36,
+        "pattern": [
+          "SLOW:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 36,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 34,
+        "pattern": [
+          "SLOW:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 34,
+        "pattern": [
+          "SLOW:INVOICE_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 30,
+        "pattern": [
+          "SLOW:PO_APPROVED"
+        ]
+      },
+      {
+        "support": 30,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 17,
+        "pattern": [
+          "SLOW:GOODS_RECEIVED",
+          "SLOW:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 17,
+        "pattern": [
+          "SLOW:GOODS_RECEIVED",
+          "SLOW:INVOICE_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 14,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 14,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 13,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED"
+        ]
+      },
+      {
+        "support": 13,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 13,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 13,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 12,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 12,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:INVOICE_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 12,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 12,
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:INVOICE_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 11,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 11,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 11,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 11,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:INVOICE_RECEIVED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 9,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED"
+        ]
+      },
+      {
+        "support": 9,
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED",
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 7,
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED"
+        ]
+      }
+    ]
+  }
+}

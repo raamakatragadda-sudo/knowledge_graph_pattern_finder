@@ -1,0 +1,17 @@
+{
+  "stage": "stage_6_filter_rank",
+  "timestamp": "2026-04-08T21:35:37.240377+00:00",
+  "duration_seconds": 0.001,
+  "input": {
+    "num_mined": 6,
+    "num_sequences": 100,
+    "total_cases": 100,
+    "min_support": 5
+  },
+  "output": {
+    "stage_patterns": 0,
+    "field_patterns": 0,
+    "stage_correlation_patterns": [],
+    "field_correlation_patterns": []
+  }
+}

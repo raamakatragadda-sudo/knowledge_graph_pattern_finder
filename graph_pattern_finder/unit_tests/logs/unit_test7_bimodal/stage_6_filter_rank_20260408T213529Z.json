@@ -1,0 +1,4898 @@
+{
+  "stage": "stage_6_filter_rank",
+  "timestamp": "2026-04-08T21:35:29.377966+00:00",
+  "duration_seconds": 0.004,
+  "input": {
+    "num_mined": 23,
+    "num_sequences": 100,
+    "total_cases": 100,
+    "min_support": 5
+  },
+  "output": {
+    "stage_patterns": 17,
+    "field_patterns": 31,
+    "stage_correlation_patterns": [
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 23,
+        "support_frac": 0.23,
+        "avg_stall_hours": 744.47,
+        "avg_stall_days": 31.02,
+        "avg_lead_hours": 925.83,
+        "rank_score": 171.2291,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_17",
+          "CASE_26",
+          "CASE_28",
+          "CASE_34"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 14,
+              "pct": 60.9
+            },
+            {
+              "value": "COMP_1",
+              "count": 9,
+              "pct": 39.1
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 4,
+              "pct": 17.4
+            },
+            {
+              "value": "MAT_6",
+              "count": 3,
+              "pct": 13.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 13.0
+            },
+            {
+              "value": "MAT_5",
+              "count": 3,
+              "pct": 13.0
+            },
+            {
+              "value": "MAT_9",
+              "count": 3,
+              "pct": 13.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 7,
+              "pct": 30.4
+            },
+            {
+              "value": "PLANT_4",
+              "count": 6,
+              "pct": 26.1
+            },
+            {
+              "value": "PLANT_2",
+              "count": 4,
+              "pct": 17.4
+            },
+            {
+              "value": "PLANT_1",
+              "count": 3,
+              "pct": 13.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 13.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 6,
+              "pct": 26.1
+            },
+            {
+              "value": "SUP_7",
+              "count": 4,
+              "pct": 17.4
+            },
+            {
+              "value": "SUP_1",
+              "count": 4,
+              "pct": 17.4
+            },
+            {
+              "value": "SUP_2",
+              "count": 3,
+              "pct": 13.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 8.7
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "STUCK:PO_APPROVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> STUCK:PO_APPROVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED"
+        ],
+        "support_count": 17,
+        "support_frac": 0.17,
+        "avg_stall_hours": 1002.7,
+        "avg_stall_days": 41.78,
+        "avg_lead_hours": 391.62,
+        "rank_score": 170.4592,
+        "sample_cases": [
+          "CASE_13",
+          "CASE_27",
+          "CASE_3",
+          "CASE_30",
+          "CASE_37"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 12,
+              "pct": 70.6
+            },
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 29.4
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 5,
+              "pct": 29.4
+            },
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 23.5
+            },
+            {
+              "value": "MAT_3",
+              "count": 3,
+              "pct": 17.6
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 11.8
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 11.8
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 29.4
+            },
+            {
+              "value": "PLANT_1",
+              "count": 5,
+              "pct": 29.4
+            },
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 17.6
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 11.8
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 11.8
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 4,
+              "pct": 23.5
+            },
+            {
+              "value": "SUP_3",
+              "count": 4,
+              "pct": 23.5
+            },
+            {
+              "value": "SUP_2",
+              "count": 3,
+              "pct": 17.6
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 11.8
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 11.8
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 20,
+        "support_frac": 0.2,
+        "avg_stall_hours": 747.63,
+        "avg_stall_days": 31.15,
+        "avg_lead_hours": 959.96,
+        "rank_score": 149.5257,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_12",
+          "CASE_2",
+          "CASE_21",
+          "CASE_23"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 11,
+              "pct": 55.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 9,
+              "pct": 45.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_9",
+              "count": 4,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 15.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 15.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 2,
+              "pct": 10.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 10.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 7,
+              "pct": 35.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 3,
+              "pct": 15.0
+            },
+            {
+              "value": "PLANT_5",
+              "count": 3,
+              "pct": 15.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 2,
+              "pct": 10.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 4,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 4,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 4,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 15.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 3,
+              "pct": 15.0
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PO_APPROVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 19,
+        "support_frac": 0.19,
+        "avg_stall_hours": 617.52,
+        "avg_stall_days": 25.73,
+        "avg_lead_hours": 1074.11,
+        "rank_score": 117.3294,
+        "sample_cases": [
+          "CASE_10",
+          "CASE_12",
+          "CASE_18",
+          "CASE_2",
+          "CASE_21"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 11,
+              "pct": 57.9
+            },
+            {
+              "value": "COMP_1",
+              "count": 8,
+              "pct": 42.1
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 4,
+              "pct": 21.1
+            },
+            {
+              "value": "MAT_8",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 10.5
+            },
+            {
+              "value": "MAT_5",
+              "count": 2,
+              "pct": 10.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 7,
+              "pct": 36.8
+            },
+            {
+              "value": "PLANT_5",
+              "count": 4,
+              "pct": 21.1
+            },
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "PLANT_1",
+              "count": 2,
+              "pct": 10.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 6,
+              "pct": 31.6
+            },
+            {
+              "value": "SUP_5",
+              "count": 4,
+              "pct": 21.1
+            },
+            {
+              "value": "SUP_3",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "SUP_4",
+              "count": 3,
+              "pct": 15.8
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 10.5
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PO_ISSUED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 18,
+        "support_frac": 0.18,
+        "avg_stall_hours": 629.77,
+        "avg_stall_days": 26.24,
+        "avg_lead_hours": 1238.91,
+        "rank_score": 113.3593,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_10",
+          "CASE_100",
+          "CASE_17",
+          "CASE_21"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 10,
+              "pct": 55.6
+            },
+            {
+              "value": "COMP_1",
+              "count": 8,
+              "pct": 44.4
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_8",
+              "count": 3,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_7",
+              "count": 2,
+              "pct": 11.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 5,
+              "pct": 27.8
+            },
+            {
+              "value": "PLANT_3",
+              "count": 4,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_4",
+              "count": 4,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_2",
+              "count": 3,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 11.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_3",
+              "count": 4,
+              "pct": 22.2
+            },
+            {
+              "value": "SUP_7",
+              "count": 4,
+              "pct": 22.2
+            },
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_6",
+              "count": 2,
+              "pct": 11.1
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:PO_APPROVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED"
+        ],
+        "effect": [
+          "SLOW:PO_APPROVED"
+        ],
+        "support_count": 9,
+        "support_frac": 0.09,
+        "avg_stall_hours": 757.72,
+        "avg_stall_days": 31.57,
+        "avg_lead_hours": 1316.47,
+        "rank_score": 68.1951,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_21",
+          "CASE_25",
+          "CASE_49"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 6,
+              "pct": 66.7
+            },
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 33.3
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 55.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 4,
+              "pct": 44.4
+            },
+            {
+              "value": "SUP_4",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 11.1
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:PO_APPROVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_APPROVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 9,
+        "support_frac": 0.09,
+        "avg_stall_hours": 757.72,
+        "avg_stall_days": 31.57,
+        "avg_lead_hours": 1316.47,
+        "rank_score": 68.1951,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_21",
+          "CASE_25",
+          "CASE_49"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 6,
+              "pct": 66.7
+            },
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 33.3
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 55.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 4,
+              "pct": 44.4
+            },
+            {
+              "value": "SUP_4",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 11.1
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:GOODS_RECEIVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 773.98,
+        "avg_stall_days": 32.25,
+        "avg_lead_hours": 991.34,
+        "rank_score": 61.9185,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_40",
+          "CASE_46",
+          "CASE_50",
+          "CASE_64"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 7,
+              "pct": 87.5
+            },
+            {
+              "value": "COMP_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:GOODS_RECEIVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 773.98,
+        "avg_stall_days": 32.25,
+        "avg_lead_hours": 991.34,
+        "rank_score": 61.9185,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_40",
+          "CASE_46",
+          "CASE_50",
+          "CASE_64"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 7,
+              "pct": 87.5
+            },
+            {
+              "value": "COMP_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED -> SLOW:GOODS_RECEIVED",
+        "cause": [
+          "SLOW:PO_APPROVED"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 829.65,
+        "avg_stall_days": 34.57,
+        "avg_lead_hours": 1031.49,
+        "rank_score": 58.0758,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_59",
+          "CASE_70",
+          "CASE_72"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 71.4
+            },
+            {
+              "value": "COMP_1",
+              "count": 2,
+              "pct": 28.6
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 42.9
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED -> SLOW:GOODS_RECEIVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PO_APPROVED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 829.65,
+        "avg_stall_days": 34.57,
+        "avg_lead_hours": 1031.49,
+        "rank_score": 58.0758,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_59",
+          "CASE_70",
+          "CASE_72"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 71.4
+            },
+            {
+              "value": "COMP_1",
+              "count": 2,
+              "pct": 28.6
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 42.9
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED -> SLOW:GOODS_RECEIVED",
+        "cause": [
+          "SLOW:PO_ISSUED"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 430.23,
+        "avg_stall_days": 17.93,
+        "avg_lead_hours": 1400.17,
+        "rank_score": 34.4187,
+        "sample_cases": [
+          "CASE_17",
+          "CASE_28",
+          "CASE_34",
+          "CASE_43",
+          "CASE_78"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 62.5
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 37.5
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_8",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED",
+          "SLOW:GOODS_RECEIVED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED -> SLOW:GOODS_RECEIVED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PO_ISSUED",
+          "SLOW:GOODS_RECEIVED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 430.23,
+        "avg_stall_days": 17.93,
+        "avg_lead_hours": 1400.17,
+        "rank_score": 34.4187,
+        "sample_cases": [
+          "CASE_17",
+          "CASE_28",
+          "CASE_34",
+          "CASE_43",
+          "CASE_78"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 62.5
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 37.5
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_8",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:PO_ISSUED",
+        "cause": [
+          "SLOW:PR_SUBMITTED"
+        ],
+        "effect": [
+          "SLOW:PO_ISSUED"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 360.0,
+        "avg_stall_days": 15.0,
+        "avg_lead_hours": 1664.54,
+        "rank_score": 18.0002,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_21",
+          "CASE_77",
+          "CASE_78",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 2,
+              "pct": 40.0
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED -> SLOW:PO_ISSUED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PR_SUBMITTED",
+          "SLOW:PO_ISSUED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 360.0,
+        "avg_stall_days": 15.0,
+        "avg_lead_hours": 1664.54,
+        "rank_score": 18.0002,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_21",
+          "CASE_77",
+          "CASE_78",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 2,
+              "pct": 40.0
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED -> SLOW:PO_ISSUED",
+        "cause": [
+          "SLOW:PO_APPROVED"
+        ],
+        "effect": [
+          "SLOW:PO_ISSUED"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 55.64,
+        "avg_stall_days": 2.32,
+        "avg_lead_hours": 1766.69,
+        "rank_score": 2.7819,
+        "sample_cases": [
+          "CASE_10",
+          "CASE_21",
+          "CASE_38",
+          "CASE_77",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_1",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 40.0
+            }
+          ]
+        }
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED",
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED -> SLOW:PO_ISSUED -> STUCK:INVOICE_RECEIVED",
+        "cause": [
+          "SLOW:PO_APPROVED",
+          "SLOW:PO_ISSUED"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 55.64,
+        "avg_stall_days": 2.32,
+        "avg_lead_hours": 1766.69,
+        "rank_score": 2.7819,
+        "sample_cases": [
+          "CASE_10",
+          "CASE_21",
+          "CASE_38",
+          "CASE_77",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_1",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 40.0
+            }
+          ]
+        }
+      }
+    ],
+    "field_correlation_patterns": [
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_1",
+          "STUCK:PO_APPROVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_1 -> STUCK:PO_APPROVED@COMP_1",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED@COMP_1"
+        ],
+        "support_count": 12,
+        "support_frac": 0.12,
+        "avg_stall_hours": 909.86,
+        "avg_stall_days": 37.91,
+        "avg_lead_hours": 377.14,
+        "rank_score": 109.1838,
+        "sample_cases": [
+          "CASE_13",
+          "CASE_27",
+          "CASE_3",
+          "CASE_37",
+          "CASE_41"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 12,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 5,
+              "pct": 41.7
+            },
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_3",
+              "count": 3,
+              "pct": 25.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 41.7
+            },
+            {
+              "value": "PLANT_1",
+              "count": 4,
+              "pct": 33.3
+            },
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 25.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 3,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 16.7
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 14,
+        "support_frac": 0.14,
+        "avg_stall_hours": 749.21,
+        "avg_stall_days": 31.22,
+        "avg_lead_hours": 1024.86,
+        "rank_score": 104.8898,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_28",
+          "CASE_34",
+          "CASE_40"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 14,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 4,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_6",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_8",
+              "count": 2,
+              "pct": 14.3
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 4,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_1",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 14.3
+            },
+            {
+              "value": "PLANT_3",
+              "count": 2,
+              "pct": 14.3
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "value": "SUP_6",
+              "count": 2,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 9,
+        "support_frac": 0.09,
+        "avg_stall_hours": 869.52,
+        "avg_stall_days": 36.23,
+        "avg_lead_hours": 951.02,
+        "rank_score": 78.257,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_40",
+          "CASE_46",
+          "CASE_50"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 9,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 11.1
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_1",
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_1 -> STUCK:INVOICE_RECEIVED@COMP_1",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "support_count": 11,
+        "support_frac": 0.11,
+        "avg_stall_hours": 625.73,
+        "avg_stall_days": 26.07,
+        "avg_lead_hours": 967.28,
+        "rank_score": 68.8308,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_21",
+          "CASE_23",
+          "CASE_25",
+          "CASE_39"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 11,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_9",
+              "count": 4,
+              "pct": 36.4
+            },
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "MAT_1",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "MAT_3",
+              "count": 1,
+              "pct": 9.1
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 9.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 4,
+              "pct": 36.4
+            },
+            {
+              "value": "PLANT_2",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "PLANT_1",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 9.1
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 9.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "SUP_4",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "SUP_6",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 9.1
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED@SUP_5",
+          "STUCK:INVOICE_RECEIVED@SUP_5"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED@SUP_5 -> STUCK:INVOICE_RECEIVED@SUP_5",
+        "cause": [
+          "SLOW:GOODS_RECEIVED@SUP_5"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@SUP_5"
+        ],
+        "support_count": 6,
+        "support_frac": 0.06,
+        "avg_stall_hours": 1143.65,
+        "avg_stall_days": 47.65,
+        "avg_lead_hours": 819.84,
+        "rank_score": 68.6188,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_40",
+          "CASE_5",
+          "CASE_75"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 50.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_5",
+              "count": 2,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 6,
+              "pct": 100.0
+            }
+          ]
+        },
+        "enrichment_field": "supplier_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED@COMP_1",
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED@COMP_1 -> STUCK:INVOICE_RECEIVED@COMP_1",
+        "cause": [
+          "SLOW:PO_APPROVED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 845.63,
+        "avg_stall_days": 35.23,
+        "avg_lead_hours": 1185.38,
+        "rank_score": 67.6503,
+        "sample_cases": [
+          "CASE_21",
+          "CASE_25",
+          "CASE_49",
+          "CASE_59",
+          "CASE_67"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 8,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "MAT_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_9",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 37.5
+            },
+            {
+              "value": "SUP_4",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED@COMP_1",
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED@COMP_1 -> STUCK:INVOICE_RECEIVED@COMP_1",
+        "cause": [
+          "SLOW:GOODS_RECEIVED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "support_count": 9,
+        "support_frac": 0.09,
+        "avg_stall_hours": 732.63,
+        "avg_stall_days": 30.53,
+        "avg_lead_hours": 771.78,
+        "rank_score": 65.9365,
+        "sample_cases": [
+          "CASE_17",
+          "CASE_43",
+          "CASE_5",
+          "CASE_59",
+          "CASE_7"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 9,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_5",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_9",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "MAT_7",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "MAT_3",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 11.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 33.3
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 22.2
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 11.1
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 11.1
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED@COMP_1",
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED@COMP_1 -> STUCK:INVOICE_RECEIVED@COMP_1",
+        "cause": [
+          "SLOW:PO_ISSUED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "support_count": 8,
+        "support_frac": 0.08,
+        "avg_stall_hours": 799.84,
+        "avg_stall_days": 33.33,
+        "avg_lead_hours": 1284.24,
+        "rank_score": 63.9871,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_17",
+          "CASE_21",
+          "CASE_31",
+          "CASE_43"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 8,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 50.0
+            },
+            {
+              "value": "MAT_7",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "MAT_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 4,
+              "pct": 50.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 12.5
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 25.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 12.5
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 12.5
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_2",
+          "STUCK:PO_APPROVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_2 -> STUCK:PO_APPROVED@COMP_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED@COMP_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 1219.32,
+        "avg_stall_days": 50.8,
+        "avg_lead_hours": 426.38,
+        "rank_score": 60.966,
+        "sample_cases": [
+          "CASE_30",
+          "CASE_6",
+          "CASE_74",
+          "CASE_80",
+          "CASE_94"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_2"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 869.52,
+        "avg_stall_days": 36.23,
+        "avg_lead_hours": 1064.28,
+        "rank_score": 60.8666,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_40",
+          "CASE_46",
+          "CASE_50",
+          "CASE_64"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 7,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 42.9
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 869.52,
+        "avg_stall_days": 36.23,
+        "avg_lead_hours": 1064.28,
+        "rank_score": 60.8666,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_40",
+          "CASE_46",
+          "CASE_50",
+          "CASE_64"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 7,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "MAT_8",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "PLANT_3",
+              "count": 1,
+              "pct": 14.3
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 3,
+              "pct": 42.9
+            },
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_APPROVED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 11,
+        "support_frac": 0.11,
+        "avg_stall_hours": 552.35,
+        "avg_stall_days": 23.01,
+        "avg_lead_hours": 993.18,
+        "rank_score": 60.7585,
+        "sample_cases": [
+          "CASE_10",
+          "CASE_12",
+          "CASE_18",
+          "CASE_2",
+          "CASE_26"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 11,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 4,
+              "pct": 36.4
+            },
+            {
+              "value": "MAT_8",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 9.1
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 9.1
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 4,
+              "pct": 36.4
+            },
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 9.1
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 9.1
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 27.3
+            },
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 18.2
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 9.1
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_ISSUED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 10,
+        "support_frac": 0.1,
+        "avg_stall_hours": 595.76,
+        "avg_stall_days": 24.82,
+        "avg_lead_hours": 1202.66,
+        "rank_score": 59.5761,
+        "sample_cases": [
+          "CASE_10",
+          "CASE_100",
+          "CASE_28",
+          "CASE_34",
+          "CASE_38"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 10,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_8",
+              "count": 3,
+              "pct": 30.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 30.0
+            },
+            {
+              "value": "MAT_10",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 1,
+              "pct": 10.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 10.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_3",
+              "count": 3,
+              "pct": 30.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 3,
+              "pct": 30.0
+            },
+            {
+              "value": "PLANT_5",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_2",
+              "count": 1,
+              "pct": 10.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 10.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_3",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 2,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 10.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED@PLANT_2",
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED@PLANT_2 -> STUCK:INVOICE_RECEIVED@PLANT_2",
+        "cause": [
+          "SLOW:PO_APPROVED@PLANT_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 726.27,
+        "avg_stall_days": 30.26,
+        "avg_lead_hours": 939.07,
+        "rank_score": 50.8387,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_42",
+          "CASE_67",
+          "CASE_72"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 7,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_2",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_2",
+          "SLOW:PO_APPROVED@PLANT_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_2 -> SLOW:PO_APPROVED@PLANT_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_2"
+        ],
+        "effect": [
+          "SLOW:PO_APPROVED@PLANT_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 1013.75,
+        "avg_stall_days": 42.24,
+        "avg_lead_hours": 1095.3,
+        "rank_score": 50.6873,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_67",
+          "CASE_77",
+          "CASE_97"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_2",
+          "SLOW:PO_APPROVED@PLANT_2",
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_2 -> SLOW:PO_APPROVED@PLANT_2 -> STUCK:INVOICE_RECEIVED@PLANT_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_2",
+          "SLOW:PO_APPROVED@PLANT_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 1013.75,
+        "avg_stall_days": 42.24,
+        "avg_lead_hours": 1095.3,
+        "rank_score": 50.6873,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_67",
+          "CASE_77",
+          "CASE_97"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_2",
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_2 -> STUCK:INVOICE_RECEIVED@PLANT_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 1013.75,
+        "avg_stall_days": 42.24,
+        "avg_lead_hours": 1095.3,
+        "rank_score": 50.6873,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_2",
+          "CASE_67",
+          "CASE_77",
+          "CASE_97"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 60.0
+            },
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 40.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED@PLANT_5",
+          "STUCK:INVOICE_RECEIVED@PLANT_5"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED@PLANT_5 -> STUCK:INVOICE_RECEIVED@PLANT_5",
+        "cause": [
+          "SLOW:GOODS_RECEIVED@PLANT_5"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_5"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 709.6,
+        "avg_stall_days": 29.57,
+        "avg_lead_hours": 675.18,
+        "rank_score": 49.672,
+        "sample_cases": [
+          "CASE_40",
+          "CASE_5",
+          "CASE_50",
+          "CASE_70",
+          "CASE_75"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_10",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "MAT_5",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_5",
+              "count": 7,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 3,
+              "pct": 42.9
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_1",
+          "STUCK:PO_APPROVED@PLANT_1"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_1 -> STUCK:PO_APPROVED@PLANT_1",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_1"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED@PLANT_1"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 976.26,
+        "avg_stall_days": 40.68,
+        "avg_lead_hours": 508.75,
+        "rank_score": 48.813,
+        "sample_cases": [
+          "CASE_41",
+          "CASE_51",
+          "CASE_6",
+          "CASE_61",
+          "CASE_91"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 4,
+              "pct": 80.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 80.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_4",
+          "STUCK:INVOICE_RECEIVED@PLANT_4"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_4 -> STUCK:INVOICE_RECEIVED@PLANT_4",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_4"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_4"
+        ],
+        "support_count": 7,
+        "support_frac": 0.07,
+        "avg_stall_hours": 663.33,
+        "avg_stall_days": 27.64,
+        "avg_lead_hours": 778.34,
+        "rank_score": 46.4329,
+        "sample_cases": [
+          "CASE_39",
+          "CASE_49",
+          "CASE_54",
+          "CASE_64",
+          "CASE_69"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_9",
+              "count": 4,
+              "pct": 57.1
+            },
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 42.9
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 7,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 28.6
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 14.3
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 14.3
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@MAT_7",
+          "STUCK:PO_APPROVED@MAT_7"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@MAT_7 -> STUCK:PO_APPROVED@MAT_7",
+        "cause": [
+          "SLOW:PR_SUBMITTED@MAT_7"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED@MAT_7"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 839.13,
+        "avg_stall_days": 34.96,
+        "avg_lead_hours": 349.4,
+        "rank_score": 41.9565,
+        "sample_cases": [
+          "CASE_27",
+          "CASE_37",
+          "CASE_47",
+          "CASE_57",
+          "CASE_87"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "material_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@PLANT_2",
+          "STUCK:PO_APPROVED@PLANT_2"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@PLANT_2 -> STUCK:PO_APPROVED@PLANT_2",
+        "cause": [
+          "SLOW:PR_SUBMITTED@PLANT_2"
+        ],
+        "effect": [
+          "STUCK:PO_APPROVED@PLANT_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 839.13,
+        "avg_stall_days": 34.96,
+        "avg_lead_hours": 349.4,
+        "rank_score": 41.9565,
+        "sample_cases": [
+          "CASE_27",
+          "CASE_37",
+          "CASE_47",
+          "CASE_57",
+          "CASE_87"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:GOODS_RECEIVED@PLANT_4",
+          "STUCK:INVOICE_RECEIVED@PLANT_4"
+        ],
+        "pattern_str": "SLOW:GOODS_RECEIVED@PLANT_4 -> STUCK:INVOICE_RECEIVED@PLANT_4",
+        "cause": [
+          "SLOW:GOODS_RECEIVED@PLANT_4"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_4"
+        ],
+        "support_count": 6,
+        "support_frac": 0.06,
+        "avg_stall_hours": 661.1,
+        "avg_stall_days": 27.55,
+        "avg_lead_hours": 1099.32,
+        "rank_score": 39.6661,
+        "sample_cases": [
+          "CASE_34",
+          "CASE_59",
+          "CASE_64",
+          "CASE_84",
+          "CASE_89"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "COMP_1",
+              "count": 3,
+              "pct": 50.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_4",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "MAT_9",
+              "count": 3,
+              "pct": 50.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_4",
+              "count": 6,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "SUP_5",
+              "count": 1,
+              "pct": 16.7
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_APPROVED@COMP_2"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 739.68,
+        "avg_stall_days": 30.82,
+        "avg_lead_hours": 1130.77,
+        "rank_score": 36.9839,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_70",
+          "CASE_72",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_APPROVED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_APPROVED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_APPROVED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 739.68,
+        "avg_stall_days": 30.82,
+        "avg_lead_hours": 1130.77,
+        "rank_score": 36.9839,
+        "sample_cases": [
+          "CASE_12",
+          "CASE_26",
+          "CASE_70",
+          "CASE_72",
+          "CASE_84"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_2",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_10",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_5",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED@PLANT_1",
+          "STUCK:INVOICE_RECEIVED@PLANT_1"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED@PLANT_1 -> STUCK:INVOICE_RECEIVED@PLANT_1",
+        "cause": [
+          "SLOW:PO_ISSUED@PLANT_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@PLANT_1"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 650.15,
+        "avg_stall_days": 27.09,
+        "avg_lead_hours": 1191.84,
+        "rank_score": 32.5075,
+        "sample_cases": [
+          "CASE_1",
+          "CASE_21",
+          "CASE_31",
+          "CASE_81",
+          "CASE_86"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 4,
+              "pct": 80.0
+            },
+            {
+              "value": "COMP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_1",
+              "count": 4,
+              "pct": 80.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_1",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_7",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_3",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "plant_id"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_1",
+          "SLOW:PO_APPROVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_1 -> SLOW:PO_APPROVED@COMP_1",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_1"
+        ],
+        "effect": [
+          "SLOW:PO_APPROVED@COMP_1"
+        ],
+        "support_count": 6,
+        "support_frac": 0.06,
+        "avg_stall_hours": 501.7,
+        "avg_stall_days": 20.9,
+        "avg_lead_hours": 1319.4,
+        "rank_score": 30.102,
+        "sample_cases": [
+          "CASE_21",
+          "CASE_25",
+          "CASE_49",
+          "CASE_67",
+          "CASE_77"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 6,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 2,
+              "pct": 33.3
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 16.7
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PR_SUBMITTED@COMP_1",
+          "SLOW:PO_APPROVED@COMP_1",
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "pattern_str": "SLOW:PR_SUBMITTED@COMP_1 -> SLOW:PO_APPROVED@COMP_1 -> STUCK:INVOICE_RECEIVED@COMP_1",
+        "cause": [
+          "SLOW:PR_SUBMITTED@COMP_1",
+          "SLOW:PO_APPROVED@COMP_1"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_1"
+        ],
+        "support_count": 6,
+        "support_frac": 0.06,
+        "avg_stall_hours": 501.7,
+        "avg_stall_days": 20.9,
+        "avg_lead_hours": 1319.4,
+        "rank_score": 30.102,
+        "sample_cases": [
+          "CASE_21",
+          "CASE_25",
+          "CASE_49",
+          "CASE_67",
+          "CASE_77"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_1",
+              "count": 6,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_7",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "MAT_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_5",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "MAT_9",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_2",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_5",
+              "count": 1,
+              "pct": 16.7
+            },
+            {
+              "value": "PLANT_4",
+              "count": 1,
+              "pct": 16.7
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 3,
+              "pct": 50.0
+            },
+            {
+              "value": "SUP_4",
+              "count": 2,
+              "pct": 33.3
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 16.7
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_ISSUED@COMP_2"
+        ],
+        "effect": [
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 430.23,
+        "avg_stall_days": 17.93,
+        "avg_lead_hours": 1485.34,
+        "rank_score": 21.5117,
+        "sample_cases": [
+          "CASE_28",
+          "CASE_34",
+          "CASE_78",
+          "CASE_84",
+          "CASE_86"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_8",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_3",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      },
+      {
+        "pattern": [
+          "SLOW:PO_ISSUED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2",
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "pattern_str": "SLOW:PO_ISSUED@COMP_2 -> SLOW:GOODS_RECEIVED@COMP_2 -> STUCK:INVOICE_RECEIVED@COMP_2",
+        "cause": [
+          "SLOW:PO_ISSUED@COMP_2",
+          "SLOW:GOODS_RECEIVED@COMP_2"
+        ],
+        "effect": [
+          "STUCK:INVOICE_RECEIVED@COMP_2"
+        ],
+        "support_count": 5,
+        "support_frac": 0.05,
+        "avg_stall_hours": 430.23,
+        "avg_stall_days": 17.93,
+        "avg_lead_hours": 1485.34,
+        "rank_score": 21.5117,
+        "sample_cases": [
+          "CASE_28",
+          "CASE_34",
+          "CASE_78",
+          "CASE_84",
+          "CASE_86"
+        ],
+        "top_holders": {
+          "company_code": [
+            {
+              "value": "COMP_2",
+              "count": 5,
+              "pct": 100.0
+            }
+          ],
+          "material_id": [
+            {
+              "value": "MAT_8",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "MAT_6",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "plant_id": [
+            {
+              "value": "PLANT_3",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_4",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "PLANT_1",
+              "count": 1,
+              "pct": 20.0
+            }
+          ],
+          "supplier_id": [
+            {
+              "value": "SUP_7",
+              "count": 2,
+              "pct": 40.0
+            },
+            {
+              "value": "SUP_6",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_1",
+              "count": 1,
+              "pct": 20.0
+            },
+            {
+              "value": "SUP_2",
+              "count": 1,
+              "pct": 20.0
+            }
+          ]
+        },
+        "enrichment_field": "company_code"
+      }
+    ]
+  }
+}

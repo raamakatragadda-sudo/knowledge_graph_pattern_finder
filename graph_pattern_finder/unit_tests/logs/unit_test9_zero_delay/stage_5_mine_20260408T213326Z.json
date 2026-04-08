@@ -1,0 +1,50 @@
+{
+  "stage": "stage_5_mine",
+  "timestamp": "2026-04-08T21:33:26.403514+00:00",
+  "duration_seconds": 0.0,
+  "input": {
+    "num_sequences": 100,
+    "min_support": 5
+  },
+  "output": {
+    "num_patterns": 6,
+    "patterns": [
+      {
+        "support": 25,
+        "pattern": [
+          "STUCK:PR_SUBMITTED"
+        ]
+      },
+      {
+        "support": 20,
+        "pattern": [
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      },
+      {
+        "support": 20,
+        "pattern": [
+          "STUCK:PO_APPROVED"
+        ]
+      },
+      {
+        "support": 15,
+        "pattern": [
+          "STUCK:INVOICE_RECEIVED"
+        ]
+      },
+      {
+        "support": 13,
+        "pattern": [
+          "STUCK:GOODS_RECEIVED"
+        ]
+      },
+      {
+        "support": 7,
+        "pattern": [
+          "STUCK:PO_ISSUED"
+        ]
+      }
+    ]
+  }
+}

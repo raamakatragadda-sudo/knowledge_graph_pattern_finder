@@ -1,0 +1,37 @@
+{
+  "stage": "stage_4_tokenise",
+  "timestamp": "2026-04-08T21:35:39.151073+00:00",
+  "duration_seconds": 0.0,
+  "input": {
+    "annotated_count": 100,
+    "num_transitions": 6
+  },
+  "output": {
+    "num_sequences": 100,
+    "avg_length": 2.02,
+    "sample_sequences": [
+      [
+        "SLOW:PR_SUBMITTED",
+        "SLOW:PO_ISSUED",
+        "STUCK:GOODS_RECEIVED"
+      ],
+      [
+        "SLOW:PO_APPROVED",
+        "SLOW:PO_ISSUED",
+        "STUCK:GOODS_RECEIVED"
+      ],
+      [
+        "SLOW:PO_ISSUED",
+        "STUCK:GOODS_RECEIVED"
+      ],
+      [
+        "STUCK:GOODS_RECEIVED"
+      ],
+      [
+        "SLOW:PR_SUBMITTED",
+        "SLOW:PO_APPROVED",
+        "STUCK:GOODS_RECEIVED"
+      ]
+    ]
+  }
+}

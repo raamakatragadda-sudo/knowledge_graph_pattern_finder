@@ -1,0 +1,19 @@
+{
+  "stage": "stage_1_extract",
+  "timestamp": "2026-04-08T21:33:55.423987+00:00",
+  "duration_seconds": 0.321,
+  "input": {
+    "source": "neo4j"
+  },
+  "output": {
+    "total_cases": 100,
+    "open_cases": 100,
+    "sample_case_ids": [
+      "CASE_1",
+      "CASE_10",
+      "CASE_100",
+      "CASE_11",
+      "CASE_12"
+    ]
+  }
+}

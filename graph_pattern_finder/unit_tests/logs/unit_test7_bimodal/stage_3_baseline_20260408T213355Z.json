@@ -1,0 +1,32 @@
+{
+  "stage": "stage_3_baseline",
+  "timestamp": "2026-04-08T21:33:55.430365+00:00",
+  "duration_seconds": 0.003,
+  "input": {
+    "total_cases": 100,
+    "num_transitions": 7,
+    "slow_multiplier": 3.0
+  },
+  "output": {
+    "baselines_minutes": {
+      "PR_CREATED": 95.35,
+      "PR_SUBMITTED": 144.93,
+      "PR_APPROVED": 272.32,
+      "PO_CREATED": 358.85,
+      "PO_APPROVED": 327.79,
+      "PO_ISSUED": 5268.8,
+      "GOODS_RECEIVED": 1431.45
+    },
+    "annotated_count": 100,
+    "slow_counts": {
+      "PR_SUBMITTED": 37,
+      "PO_ISSUED": 18,
+      "PO_APPROVED": 19,
+      "GOODS_RECEIVED": 23
+    },
+    "stuck_counts": {
+      "INVOICE_RECEIVED": 48,
+      "PO_APPROVED": 52
+    }
+  }
+}

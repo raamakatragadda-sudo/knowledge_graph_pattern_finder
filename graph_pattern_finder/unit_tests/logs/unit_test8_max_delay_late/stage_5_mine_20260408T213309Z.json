@@ -1,0 +1,20 @@
+{
+  "stage": "stage_5_mine",
+  "timestamp": "2026-04-08T21:33:09.457442+00:00",
+  "duration_seconds": 0.0,
+  "input": {
+    "num_sequences": 100,
+    "min_support": 5
+  },
+  "output": {
+    "num_patterns": 1,
+    "patterns": [
+      {
+        "support": 100,
+        "pattern": [
+          "STUCK:INVOICE_VALIDATED"
+        ]
+      }
+    ]
+  }
+}
